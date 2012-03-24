@@ -3,6 +3,8 @@
 #include<cstring>
 #include<cstdlib>
 #include<miko/rall_cout.hpp>
+#include<chrono>
+#include<thread>
 
 template<class Range,class Function>
 void replace(Range& s,const char* src,
@@ -18,6 +20,7 @@ void replace(Range& s,const char* src,
 		s[c].replace(i,src_len,dst,dst_len);
 		f(s);
 		}
+	std::this_thread::sleep_for(std::chrono::milliseconds(50));
 	}
 }
 
@@ -34,6 +37,6 @@ int main()
         };
 	replace(ar," ","0",[](const std::array<std::string,11>&){});
 	replace(ar,"0"," ",[](const std::array<std::string,11>& s){
-                        system("cls");
+                        system("clear");
                         miko::rall_cout<<s;});
 }
