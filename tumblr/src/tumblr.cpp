@@ -26,7 +26,7 @@ void replace(Range& s,const char* src,
 
 int main()
 {
-	std::array<std::string,11> ar{
+	std::array<std::string,7> ar{
 "    .                                 .o8       oooo                \n",
 "  .o8                                \"888       `888               \n",
 ".o888oo oooo  oooo  ooo. .oo.  .oo.   888oooo.   888  oooo d8b     \n",
