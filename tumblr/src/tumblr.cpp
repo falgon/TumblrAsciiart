@@ -35,8 +35,8 @@ int main()
 "  888 .  888   888   888   888   888  888   888  888   888    .o.  \n",
 "  \"888\"  `V88V\"V8P' o888o o888o o888o `Y8bod8P' o888o d888b   Y8P  \n"
         };
-	replace(ar," ","0",[](const std::array<std::string,11>&){});
-	replace(ar,"0"," ",[](const std::array<std::string,11>& s){
+	replace(ar," ","0",[](const std::array<std::string,7>&){});
+	replace(ar,"0"," ",[](const std::array<std::string,7>& s){
                         system("clear");
                         miko::rall_cout<<s;});
 }
